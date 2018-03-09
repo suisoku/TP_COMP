@@ -14,11 +14,6 @@ public class StringTriable implements Triable {
 		return String.CASE_INSENSITIVE_ORDER;
 	}
 
-	public String toString(String o) {
-		// TODO Auto-generated method stub
-		return o;
-	}
-
 
 	public long count() {
 		count++;
@@ -28,6 +23,12 @@ public class StringTriable implements Triable {
 	public void resetCount() {
 		count = 0;
 		
+	}
+
+	@Override
+	public String toString(Object o) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
