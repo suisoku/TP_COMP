@@ -1,4 +1,4 @@
-package jus.aoo.tri.triable;
+package jus.aoo.tri;
 import java.util.Comparator ;
 
 public interface Triable<T> {

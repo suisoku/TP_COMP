@@ -2,9 +2,9 @@ package jus.aoo.tri.triable;
 
 import java.util.Comparator;
 
-public class StringTriable implements Triable {
+import jus.aoo.tri.Triable;
 
-	int count = 0;
+public class StringTriable implements Triable<String> {
 
 	public String newInstance() {
 		return (String.valueOf((int)(Math.random()* 1000000)) +"");
@@ -14,21 +14,19 @@ public class StringTriable implements Triable {
 		return String.CASE_INSENSITIVE_ORDER;
 	}
 
-
+	@Override
 	public long count() {
-		count++;
-		return count;
+		return 0;
 	}
-
+	
+	@Override
 	public void resetCount() {
-		count = 0;
 		
 	}
 
 	@Override
-	public String toString(Object o) {
-		// TODO Auto-generated method stub
-		return null;
+	public String toString(String o) {
+		return o;
 	}
 
 
